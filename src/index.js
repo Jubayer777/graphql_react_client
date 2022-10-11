@@ -17,6 +17,7 @@ const authLink = setContext(() => {
   const userRole = localStorage.getItem("userRole");
   return {
     headers: {
+      "Access-Control-Allow-Origin": "*",
       Authorization: token ? `Bearer ${token}` : "",
       Role: userRole ? userRole : "",
     },
@@ -24,10 +25,7 @@ const authLink = setContext(() => {
 });
 
 const httpLink = new HttpLink({
-  uri: "https://ge-server-ochre.vercel.app/graphql",
-  fetchOptions: {
-    mode: 'no-cors',
-  },
+  uri: "https://ge-server-ochre.vercel.app/graphql"
 });
 
 const client = new ApolloClient({
