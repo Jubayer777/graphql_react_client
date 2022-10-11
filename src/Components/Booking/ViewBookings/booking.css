@@ -1,0 +1,12 @@
+.bookingImg {
+  width: 120px;
+  height: 100px;
+  margin-left: 25%;
+  margin-top: 5px;
+}
+.statusDrop {
+  height: 25px;
+  border: 1px solid maroon;
+  border-radius: 5px;
+  color: maroon;
+}

@@ -1,0 +1,40 @@
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(5, 5, 90);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.left_nav {
+  padding-left: 100px;
+}
+.right_nav {
+  display: flex;
+  justify-content: right;
+  padding-right: 100px;
+}
+.companyLogo {
+  width: 50px;
+}
+.nav_link {
+  text-decoration: none;
+  color: goldenrod;
+  margin-left: 15px;
+  padding-bottom: 10px;
+}
+.nav_link:hover {
+  color: white;
+}
+.nav_btn {
+  background-color: rgb(5, 5, 90);
+  border: none;
+  color: goldenrod;
+  margin-left: 15px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nav_btn:hover {
+  color: white;
+}

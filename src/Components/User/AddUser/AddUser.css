@@ -1,0 +1,57 @@
+.createBody {
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: rgb(223, 218, 213);
+  border-radius: 8px;
+}
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.inputLabel {
+  font-family: cursive;
+  margin-bottom: 5px;
+}
+.inputField {
+  border: none;
+  height: 15px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.inputField:focus {
+  outline: 1px solid blue;
+}
+.btn {
+  height: 30px;
+  width: fit-content;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+.userLink {
+  float: right;
+  margin-right: 45.5%;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.userLink:hover {
+  color: blue;
+}

@@ -1,0 +1,33 @@
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+}
+.detailsCard {
+  width: 450px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  margin-top: 80px;
+}
+.detailsInfoDiv {
+  margin-left: 20%;
+  margin-bottom: 40px;
+}
+.bookBtn {
+  float: right;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  width: fit-content;
+  height: 30px;
+  background-color: aquamarine;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bookBtn:hover {
+  background-color: darkolivegreen;
+  color: white;
+}
