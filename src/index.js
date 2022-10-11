@@ -24,7 +24,10 @@ const authLink = setContext(() => {
 });
 
 const httpLink = new HttpLink({
-  uri: "https://jubayercar.herokuapp.com/graphql"
+  uri: "https://jubayercar.herokuapp.com/graphql",
+  fetchOptions: {
+    mode: 'no-cors',
+  },
 });
 
 const client = new ApolloClient({
