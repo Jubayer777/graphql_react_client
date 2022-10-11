@@ -24,7 +24,10 @@ const authLink = setContext(() => {
 });
 
 const httpLink = new HttpLink({
-  uri: "https://ge-server-ochre.vercel.app/graphql"
+  uri: "https://ge-server-ochre.vercel.app/graphql",
+  fetchOptions: {
+    mode: 'no-cors',
+  },
 });
 
 const client = new ApolloClient({
