@@ -25,14 +25,14 @@ const authLink = setContext(() => {
 
 const httpLink = new HttpLink({
   uri: "https://ge-server-ochre.vercel.app/graphql",
-  fetchOptions: {
-    mode: 'no-cors',
-  },
 });
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link: authLink.concat(httpLink),
+  fetchOptions: {
+    mode: 'no-cors',
+  },
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
